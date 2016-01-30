@@ -24,8 +24,7 @@ RE_TIME = re.compile('[0-9+]\:[0-9+]\.', re.UNICODE)
 def create_env(name):
     #Buy default ENV is a directory composed by username
     #can be changed here
-    #self.ENV = dict(self.settings["env"])
-
+    
     directory = os.path.join(os.getcwd(), name)
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -198,5 +197,5 @@ class PytubeSearch(object):
     
         
 if __name__ == "__main__":
-    PytubeSearch(query='\"Harold Hyman\"', user="admin@cortext.fr", project="HH5", filter = True)
+    PytubeSearch(query='\"Pycon\"', user="admin@cortext.fr", project="Pycon", filter = True)
 
